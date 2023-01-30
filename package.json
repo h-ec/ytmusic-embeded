@@ -1,0 +1,17 @@
+{
+  "name": "ytmusic-embeded",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./dist/main.js",
+  "scripts": {
+    "app:start": "tsc && concurrently \"tsc -w\" \"electron .\"",
+    "app:prod": "tsc && ts-node minify.ts && electron-packager dist/ YoutubeMusic --icon=packaged_app/icon.ico --win32metadata.CompanyName=\"EDU\" --win32metadata.ProductName=\"YoutubeMusic\" --win32metadata.requested-execution-level=\"asInvoker\" --asar"
+  },
+  "dependencies": {
+    "@cliqz/adblocker-electron": "^1.25.2",
+    "@types/node": "^18.11.18",
+    "cross-fetch": "^3.1.5",
+    "electron": "^22.1.0",
+    "obfuscate-my-code": "^1.0.2"
+  }
+}

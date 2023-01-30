@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Youtube Music</title>
+
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="control-bar">
+            <span class="left">
+                <p class="title">Youtube Music</p>
+            </span>
+            <span class="right">
+                <li id="minimize-cb" class="default-button">–</li>
+                <li id="maxmimize-cb" class="default-button"><img src="./assets/square.svg" /></li>
+                <li id="close-cb" class="red-button"><img src="./assets/close.svg" /></li>
+            </span>
+        </div>
+        <webview src="https://music.youtube.com/" class="webview-element"></webview>
+        <script defer src="./index.js"></script>
+    </body>
+</html>
